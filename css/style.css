@@ -62,7 +62,7 @@ body {
   background-color: #ffffff26;
   font-size: 1.29em;
   transition: 0.3s;
-  margin: 8px -15px;
+  margin: 0px -15px;
   padding: 8px 15px;
 }
 
@@ -547,8 +547,9 @@ footer #movetop:hover {
   font-weight: 700;
 }
 
-.cart select:focus {
-  outline: none;
+.cart select.form-select:focus {
+  border-color: #ababab;
+  box-shadow: 0 0 4px #ccc;
 }
 
 .cart .delete-item {
@@ -557,4 +558,95 @@ footer #movetop:hover {
   background-color: red;
   padding: 10% 12%;
   color: #fff;
+}
+
+.cart .total button {
+  border-radius: 5px;
+}
+
+.cart .total button.checkout {
+  background-color: #475A28;
+  color: #fff;
+  font-weight: 600;
+}
+
+.cart .total button.shop {
+  background-color: #00c282;
+  color: #fff;
+  font-weight: 500;
+}
+
+
+/* SEARCH RESULTS PAGE */
+.title {
+  color: #475A28;
+  text-align: center;
+  margin-top: 15vh;
+}
+
+
+/* ACCOUNT PAGE -DASHBORD */
+.dashboard {
+  margin: 10vh 0px;
+  /* background-color: red; */
+  border-radius: 4px;
+}
+
+.dashboard ul {
+  padding: 4px 0;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.dashboard ul li {
+  list-style-type: none;
+  font-size: 1.3em;
+  padding: 10px;
+
+}
+
+.dashboard ul li:hover,
+.dashboard ul li:focus,
+.dashboard ul li:active,
+.dashboard ul li.active {
+  background-color: #bfe0b5;
+  transition: 0.3s;
+  padding: 10px;
+  /* margin: -10px; */
+  font-weight: 600;
+}
+
+.dashboard ul li a {
+  text-decoration: none;
+  color: #475A28;
+}
+
+.view {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  color: #475A28;
+  margin: 0 0 20px 0;
+}
+
+.view h3 {
+  font-size: 1.15em;
+}
+
+.view h4 {
+
+}
+
+.view .address {
+  margin-top: 4vh;
+}
+
+.view .address button:hover,
+.view .address button:focus {
+  color: #475A28;
+}
+
+
+.fw-600 {
+  font-weight: 600;
 }
